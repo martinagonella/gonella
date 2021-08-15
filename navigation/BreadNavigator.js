@@ -25,7 +25,7 @@ const BreadNavigator = () => (
     <BreadStack.Screen
       name="Home"
       component={CategoriesScreen}
-      options={{ title: 'Mi Pan' }}
+      options={{ title: 'BURGUERFACTORY: TODO TIPOS DE GUSTOS' }}
     />
     <BreadStack.Screen
       name="BreadCategory"

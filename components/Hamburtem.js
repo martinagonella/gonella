@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import TouchableComponent from './TouchableComponent';
 
-const BreadItem = ({ item, onSelected }) => {
+const HamburItem = ({ item, onSelected }) => {
   return (
     <TouchableComponent onPress={() => onSelected(item)} style={styles.breadItem}>
       <View>
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BreadItem;
+export default HamburItem;

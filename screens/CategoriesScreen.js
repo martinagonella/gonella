@@ -19,7 +19,7 @@ const CategoriesScreen = ({ navigation }) => {
       data={breadCategories}
       renderItem={renderItem}
       keyExtractor={item => item.id}
-      numColumns={2}
+      numColumns={1}
     />
   )
 }

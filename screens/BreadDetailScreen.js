@@ -18,7 +18,6 @@ const BreadDetailScreen = ({ navigation }) => {
         <Text style={styles.title}>{item.name}</Text>
         <Text style={styles.text}>{item.description}</Text>
         <Text style={styles.text}>${item.price}</Text>
-        <Text style={styles.text}>{item.weight}gr</Text>
       </View>
       <Button title="AGREGAR AL CARRITO" onPress={handleAddItem} color={Colors.accent} />
       <ShowCart navigation={navigation} />
@@ -37,11 +36,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: 24,
+    fontSize: 28,
     fontFamily: 'open-sans-bold',
   },
   text: {
-    fontSize: 18,
+    fontSize: 20,
     fontFamily: 'open-sans',
   }
 });

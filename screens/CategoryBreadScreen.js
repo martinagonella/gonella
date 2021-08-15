@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { View, FlatList } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
-import BreadItem from '../components/BreadItem';
+import HamburItem from '../components/HamburItem';
 import ShowCart from '../components/ShowCart';
 import { filterBread, selectBread } from '../store/actions/bread.action';
 
@@ -18,7 +18,7 @@ const CategoryBreadScreen = ({ navigation }) => {
     dispatch(selectBread(item.id));
     navigation.navigate('DetailBread', { name: item.name });
   }
-  const renderItem = ({ item }) => <BreadItem item={item} onSelected={handleSelected} />
+  const renderItem = ({ item }) => <HamburItem item={item} onSelected={handleSelected} />
 
   return (
     <View>

@@ -6,9 +6,6 @@ import MainNavigator from './navigation';
 
 import store from './store';
 
-if (__DEV__) {
-  import('./ReactotronConfig').then(() => console.log('Reactotron Configured'))
-}
 
 export default function App() {
   const [fontsLoaded] = useFonts({

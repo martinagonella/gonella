@@ -80,7 +80,7 @@ const AuthScreen = () => {
       style={styles.screen}
     >
       <View style={styles.container}>
-        <Text style={styles.title}>MI PAN: LOGIN</Text>
+        <Text style={styles.title}>BURGUERFACTORY: LOGIN</Text>
         <View>
           <Input
             id="email"

@@ -1,6 +1,5 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import Reactotron from '../ReactotronConfig'
 
 import CategoryReducer from './reducers/category.reducer';
 import BreadReducer from './reducers/bread.reducer';
@@ -14,10 +13,8 @@ const RootReducer = combineReducers({
   auth: AuthReducer,
 })
 
-export default createStore(
-  RootReducer,
+export default createStore(RootReducer,
   compose(
     applyMiddleware(thunk),
-    Reactotron.createEnhancer(),
   ),
 )
